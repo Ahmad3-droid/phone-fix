@@ -1,0 +1,23 @@
+<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>مشخّص أعطال الموبايل 3D</title>
+<link rel="stylesheet" href="style.css">
+</head><body><main>
+<h1>🔧 مشخّص أعطال الموبايل</h1>
+<section class="card">
+<div class="chips" id="brands"></div>
+<label>الموديل <select id="model"></select></label>
+<label>ما المشكلة؟ <select id="sym"></select></label>
+</section>
+<div id="view"><div id="tip">اسحب للتدوير • قرّب بإصبعين • المس جزءاً لتعرف اسمه</div></div>
+<section class="card" id="sel" hidden><b id="selName"></b> <button class="chip" id="selBtn">إزالة هذا الجزء</button></section>
+<section class="card">
+<b>الأجزاء (المس الجزء لإزالته أو إرجاعه)</b>
+<div class="chips" id="parts"></div>
+<div class="row">
+<button class="chip" id="front">قلب الجهاز</button>
+<button class="chip" id="reset">إعادة تركيب الكل</button>
+<label class="grow">تفكيك <input type="range" id="exp" min="1" max="4" step="0.1" value="1"></label>
+</div></section>
+<section class="card res" id="res"></section>
+</main><script type="module" src="main.js"></script></body></html>
